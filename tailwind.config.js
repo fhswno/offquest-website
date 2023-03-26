@@ -9,6 +9,8 @@ module.exports = {
         "source-code-pro": ["Source Code Pro", "monospace"],
       },
       screens: {
+        smallMobile: "320px",
+
         mobile: "550px",
 
         tablet: "840px",
