@@ -26,6 +26,7 @@ export default function Home() {
     <div className={"min-h-screen bg-gray-100"}>
       <Head>
         <title>OffQuest</title>
+        <link rel="shortcut icon" href="/logo.png" />
       </Head>
       <header className="bg-neutral-900 drop-shadow-2xl py-6 px-4 sm:px-6 lg:px-8 z-10 shadow-white">
         <div className="flex items-center justify-between">
