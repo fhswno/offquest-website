@@ -25,14 +25,14 @@ export default function Home() {
   return (
     <div className={"min-h-screen bg-gray-100"}>
       <Head>
-        <title>Offquest</title>
+        <title>OffQuest</title>
       </Head>
       <header className="bg-neutral-900 drop-shadow-2xl py-6 px-4 sm:px-6 lg:px-8 z-10 shadow-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Image
               src="/logo.png"
-              alt="Offquest Logo"
+              alt="OffQuest Logo"
               width={40}
               height={40}
               priority
@@ -42,7 +42,7 @@ export default function Home() {
             <h1
               className={`${sourceCodePro.className} text-xl font-semibold text-white ml-2`}
             >
-              Offquest
+              OffQuest
             </h1>
           </div>
           {/* Add more navigation items as needed */}
@@ -66,14 +66,13 @@ export default function Home() {
               href="https://twitter.com/search?q=%23offquest&src=hashtag_click"
               target="_blank"
             >
-              <GradientText text="#Offquest" size="text-5xl" />
+              <GradientText text="#OffQuest" size="text-5xl" />
             </a>
           </span>
         </h2>
         <div className="blur-lg">
           <GlowingEffect />
         </div>
-        <h1 className={sourceCodePro.className}>Test</h1>
         <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col items-start desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
           <div className="flex flex-col desktop:w-1/2 h-full tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
             <h2 className={`${sourceCodePro.className} text-4xl text-white`}>
@@ -98,7 +97,7 @@ export default function Home() {
             <div className="blur-3xl">
               <Image
                 src="/planet.svg"
-                alt="Offquest Logo"
+                alt="OffQuest Logo"
                 width={300}
                 height={300}
                 priority
@@ -173,12 +172,12 @@ export default function Home() {
         <div
           className={`${sourceCodePro.className} text-center text-gray-600 text-sm`}
         >
-          Built with ❤️ by Offquest Team in London, using Next.js & Tailwind CSS
+          Built with ❤️ by OffQuest Team in London, using Next.js & Tailwind CSS
         </div>
         <div
           className={`${sourceCodePro.className} text-center text-gray-600 text-sm`}
         >
-          &copy; {new Date().getFullYear()} Offquest. All rights reserved.
+          &copy; {new Date().getFullYear()} OffQuest. All rights reserved.
         </div>
       </footer>
     </div>
