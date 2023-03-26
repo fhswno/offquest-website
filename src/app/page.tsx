@@ -74,8 +74,8 @@ export default function Home() {
           <GlowingEffect />
         </div>
         <h1 className={sourceCodePro.className}>Test</h1>
-        <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row items-start desktop:h-96 mobile:h-fit tablet:h-96">
-          <div className="flex flex-col desktop:w-1/2 h-full p-20 tablet:w-1/2 mobile:w-full">
+        <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col items-start desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
+          <div className="flex flex-col desktop:w-1/2 h-full tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
             <h2 className={`${sourceCodePro.className} text-4xl text-white`}>
               Follow us on our{" "}
               <GradientText
@@ -94,7 +94,7 @@ export default function Home() {
               at, and most importantly, make a difference.
             </p>
           </div>
-          <div className="desktop:w-1/2 mobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-full">
+          <div className="desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-fit">
             <div className="blur-3xl">
               <Image
                 src="/planet.svg"
@@ -106,20 +106,20 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-16 w-full flex desktop:flex-row mobile:flex-col tablet:flex-row items-start desktop:h-fit mobile:h-fit tablet:h-fit">
-          <div className="desktop:w-1/2 mobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-full mobile:order-2 desktop:order-1 tablet:order-1">
+        <div className="mt-16 w-full flex desktop:flex-row mobile:flex-col smallMobile:flex-col tablet:flex-row items-start desktop:h-fit mobile:h-fit tablet:h-fit desktop:p-20 tablet:p-16 mobile:p-14 smallMobile:p-10">
+          <div className="desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-full mobile:order-2 smallMobile:order-2 desktop:order-1 tablet:order-1">
             <div className="blur-xl mobile:ml-10 tablet:ml-0 desktop:ml-0">
               <Image
                 src="/test.svg"
                 alt="test animation"
                 width={300}
                 height={300}
-                className="w-full h-96"
+                className="w-full h-96 smallMobile:ml-10 mobile:ml-8 tablet:ml-0 desktop:ml-0"
                 priority
               />
             </div>
           </div>
-          <div className="flex flex-col desktop:w-1/2 h-full p-20 tablet:w-1/2 mobile:w-full mobile:order-1 desktop:order-1 tablet:order-1 mobile:mb-12 tablet:mb-0 desktop:mb-0">
+          <div className="flex flex-col desktop:w-1/2 h-full  tablet:w-1/2 mobile:w-full mobile:order-1 smallMobile:order-1 desktop:order-1 tablet:order-1 ">
             <h2
               className={`${sourceCodePro.className} text-start text-4xl text-white`}
             >
@@ -143,13 +143,13 @@ export default function Home() {
           </div>
         </div>
         <h2
-          className={`${sourceCodePro.className} text-center text-5xl font-bold text-white my-8`}
+          className={`${sourceCodePro.className} text-center text-5xl font-bold text-white mb-8 mt-20`}
         >
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="Our Values" size="text-5xl" />
           </span>
         </h2>
-        <div className="flex flex-row flex-wrap justify-center items-start w-full p-20">
+        <div className="flex flex-row flex-wrap justify-center items-start w-full desktop:p-20 tablet:p-20 mobile:p-20 smallMobile:p-10">
           {CardData.map((card, index) => (
             <Card
               key={index}
