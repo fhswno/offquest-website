@@ -28,49 +28,49 @@ const handleIconSelection = (icon: string) => {
     case "code-branch":
       return (
         <FaCodeBranch
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     case "lightbulb":
       return (
         <FaLightbulb
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     case "paint-brush":
       return (
         <FaPaintBrush
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     case "lock":
       return (
         <FaLock
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     case "pound-sign":
       return (
         <FaPoundSign
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     case "users":
       return (
         <FaUsers
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
     default:
       return (
         <FaCodeBranch
-          className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
+          className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
           style={{ animation: "spin 2s linear infinite" }}
         />
       );
@@ -183,13 +183,13 @@ const CardComponent = ({
       <div className="flex flex-row items-center mb-2">
         {handleIconSelection(icon)}
         <h2
-          className={`${sourceCodePro.className} text-2xl font-bold text-white`}
+          className={`${sourceCodePro.className} text-2xl font-bold text-black dark:text-white`}
         >
           {title}
         </h2>
       </div>
       <p
-        className={`${sourceCodePro.className} text-sm font-normal text-white`}
+        className={`${sourceCodePro.className} text-sm font-normal text-black dark:text-white`}
       >
         {description}
       </p>
