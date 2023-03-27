@@ -28,7 +28,7 @@ export default function Home() {
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
       </Head>
-      <header className="bg-neutral-900 drop-shadow-2xl py-6 px-4 sm:px-6 lg:px-8 z-10 shadow-white">
+      <header className="bg-gray-300 dark:bg-neutral-900 drop-shadow-2xl py-6 px-4 sm:px-6 lg:px-8 z-10 shadow-black dark:shadow-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Image
@@ -41,7 +41,7 @@ export default function Home() {
               className="hover:animate-pulse"
             />
             <h1
-              className={`${sourceCodePro.className} text-xl font-semibold text-white ml-2`}
+              className={`${sourceCodePro.className} text-xl font-semibold text-black dark:text-white ml-2`}
             >
               OffQuest
             </h1>
@@ -49,17 +49,17 @@ export default function Home() {
           {/* Add more navigation items as needed */}
           <div className="flex flex-row items-center">
             <a href="https://www.linkedin.com/company/offquest" target="_blank">
-              <FaLinkedin className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
+              <FaLinkedin className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
             </a>
             <a href="https://twitter.com/offquesthq" target="_blank">
-              <FaTwitter className="text-white text-2xl ml-4 hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
+              <FaTwitter className="text-black dark:text-white text-2xl ml-4 hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
             </a>
           </div>
         </div>
       </header>
-      <main className="py-20 flex flex-col items-center justify-center bg-black">
+      <main className="py-20 flex flex-col items-center justify-center bg-white dark:bg-black">
         <h2
-          className={`${sourceCodePro.className} text-center text-5xl font-bold text-white mb-8`}
+          className={`${sourceCodePro.className} text-center text-5xl font-bold text-black dark:text-white mb-8`}
         >
           Welcome to{" "}
           <span className="hover:animate-pulse hover:cursor-pointer">
@@ -76,19 +76,25 @@ export default function Home() {
         </div>
         <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col items-start desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
           <div className="flex flex-col desktop:w-1/2 h-full tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
-            <h2 className={`${sourceCodePro.className} text-4xl text-white`}>
+            <h2
+              className={`${sourceCodePro.className} text-4xl text-black dark:text-white`}
+            >
               Follow us on our{" "}
               <GradientText
                 text="quest to change the industry"
                 size="text-4xl"
               ></GradientText>
             </h2>
-            <p className={`${sourceCodePro.className} my-6 text-white`}>
+            <p
+              className={`${sourceCodePro.className} my-6 text-black dark:text-white`}
+            >
               We are a team of innovators, on a quest to build leading tech
               products, which will dramatically change the way people interact
               with the world around them.
             </p>
-            <p className={`${sourceCodePro.className} mb-6 text-white`}>
+            <p
+              className={`${sourceCodePro.className} mb-6 text-black dark:text-white`}
+            >
               Our goal is to solve real world problems, by creating
               beautifully-crafted products that are easy to use, great to look
               at, and most importantly, make a difference.
@@ -121,7 +127,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col desktop:w-1/2 h-full  tablet:w-1/2 mobile:w-full mobile:order-1 smallMobile:order-1 desktop:order-1 tablet:order-1 ">
             <h2
-              className={`${sourceCodePro.className} text-start text-4xl text-white`}
+              className={`${sourceCodePro.className} text-start text-4xl text-black dark:text-white`}
             >
               We are currently{" "}
               <GradientText
@@ -129,12 +135,16 @@ export default function Home() {
                 size="text-4xl"
               ></GradientText>
             </h2>
-            <p className={`${sourceCodePro.className} my-6 text-white`}>
+            <p
+              className={`${sourceCodePro.className} my-6 text-black dark:text-white`}
+            >
               This product will provide a game-changing solution to a problem
               everyone faces, and will be available to the public in the coming
               months.
             </p>
-            <p className={`${sourceCodePro.className} mb-6 text-white`}>
+            <p
+              className={`${sourceCodePro.className} mb-6 text-black dark:text-white`}
+            >
               Our diverse team of developers, designers and experts are building
               a community-driven product, which will get people together, help
               them achieve their goals, and provide them with the tools they
@@ -143,7 +153,7 @@ export default function Home() {
           </div>
         </div>
         <h2
-          className={`${sourceCodePro.className} text-center text-5xl font-bold text-white mb-8 mt-20`}
+          className={`${sourceCodePro.className} text-center text-5xl font-bold text-black dark:text-white mb-8 mt-20`}
         >
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="Our Values" size="text-5xl" />
@@ -161,7 +171,7 @@ export default function Home() {
           ))}
         </div>
         <h2
-          className={`${sourceCodePro.className} text-center text-5xl font-bold text-white my-8 p-20`}
+          className={`${sourceCodePro.className} text-center text-5xl font-bold text-black dark:text-white my-8 p-20`}
         >
           The Quest starts in{" "}
           <span className="hover:animate-pulse hover:cursor-pointer">
@@ -169,7 +179,7 @@ export default function Home() {
           </span>
         </h2>
       </main>
-      <footer className="bg-black py-6 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gray-300 dark:bg-black py-6 px-4 sm:px-6 lg:px-8">
         <div
           className={`${sourceCodePro.className} text-center text-gray-600 text-sm`}
         >
