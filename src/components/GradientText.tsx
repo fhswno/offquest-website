@@ -1,10 +1,7 @@
-import { Source_Code_Pro } from "next/font/google";
+// FONTS
+import { workSans } from "../../lib/fonts/workSans";
 
-const sourceCodePro = Source_Code_Pro({
-  subsets: ["latin"],
-  variable: "--font-source-code-pro",
-});
-
+// TYPESCRIPT
 interface GradientTextProps {
   text: string;
   size: string;
@@ -12,13 +9,11 @@ interface GradientTextProps {
 
 const GradientText = ({ text, size }: GradientTextProps) => {
   return (
-    // <div className="relative">
     <span
-      className={`${sourceCodePro.className} ${size} text-transparent bg-gradient-to-r bg-clip-text from-purple-500 via-blue-500 to-blue-500`}
+      className={`${workSans.className} ${size} text-transparent bg-gradient-to-r bg-clip-text from-purple-500 via-blue-500 to-blue-500`}
     >
       {text}
     </span>
-    // </div>
   );
 };
 
