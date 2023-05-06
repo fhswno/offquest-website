@@ -1,6 +1,6 @@
-import { Work_Sans } from "next/font/google";
+import { Work_Sans } from 'next/font/google';
 
 export const workSans = Work_Sans({
-  subsets: ["latin"],
-  variable: "--font-work-sans",
+  subsets: ['latin'],
+  variable: '--font-work-sans',
 });
