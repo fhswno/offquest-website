@@ -1,6 +1,9 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from "react";
+// REACT
+import React, { useState, useRef } from "react";
+
+// ICONS
 import {
   FaCodeBranch,
   FaLightbulb,
@@ -9,13 +12,11 @@ import {
   FaPoundSign,
   FaUsers,
 } from "react-icons/fa";
-import { Source_Code_Pro } from "next/font/google";
 
-const sourceCodePro = Source_Code_Pro({
-  subsets: ["latin"],
-  variable: "--font-source-code-pro",
-});
+// FONTS
+import { workSans } from "../../lib/fonts/workSans";
 
+// TYPESCRIPT
 interface CardComponentProps {
   title: string;
   description: string;
@@ -128,7 +129,7 @@ const Card = ({ title, description, icon, color }: CardComponentProps) => {
   return (
     <div
       ref={cardRef}
-      className={`${sourceCodePro.className} card bg-gradient-to-r p-6 text-white rounded-[20px] desktop:w-1/4 h-fit m-4 tablet:w-2/6 mobile:w-full drop-shadow-2xl border-[1px] hover:cursor-pointer ${colorSet}`}
+      className={`${workSans.className} card bg-gradient-to-r p-6 text-white rounded-[20px] desktop:w-1/4 h-fit m-4 tablet:w-2/6 mobile:w-full drop-shadow-2xl border-[1px] hover:cursor-pointer ${colorSet}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onMouseMove={handleMouseMove}
@@ -140,15 +141,11 @@ const Card = ({ title, description, icon, color }: CardComponentProps) => {
     >
       <div className="flex flex-row items-center mb-2">
         {handleIconSelection(icon)}
-        <h2
-          className={`${sourceCodePro.className} text-2xl font-bold text-white`}
-        >
+        <h2 className={`${workSans.className} text-2xl font-bold text-white`}>
           {title}
         </h2>
       </div>
-      <p
-        className={`${sourceCodePro.className} text-sm font-normal text-white`}
-      >
+      <p className={`${workSans.className} text-sm font-normal text-white`}>
         {description}
       </p>
     </div>
