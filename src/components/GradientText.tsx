@@ -1,5 +1,5 @@
 // FONTS
-import { workSans } from "../../lib/fonts/workSans";
+import { workSans } from '../../lib/fonts/workSans';
 
 // TYPESCRIPT
 interface GradientTextProps {
