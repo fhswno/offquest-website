@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
 // REACT
-import React, { useState, useRef } from "react";
+import React, { useState, useRef } from 'react';
 
 // ICONS
 import {
@@ -11,10 +11,10 @@ import {
   FaLock,
   FaPoundSign,
   FaUsers,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 // FONTS
-import { workSans } from "../../lib/fonts/workSans";
+import { workSans } from '../../lib/fonts/workSans';
 
 // TYPESCRIPT
 interface CardComponentProps {
@@ -26,53 +26,53 @@ interface CardComponentProps {
 
 const handleIconSelection = (icon: string) => {
   switch (icon) {
-    case "code-branch":
+    case 'code-branch':
       return (
         <FaCodeBranch
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
-    case "lightbulb":
+    case 'lightbulb':
       return (
         <FaLightbulb
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
-    case "paint-brush":
+    case 'paint-brush':
       return (
         <FaPaintBrush
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
-    case "lock":
+    case 'lock':
       return (
         <FaLock
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
-    case "pound-sign":
+    case 'pound-sign':
       return (
         <FaPoundSign
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
-    case "users":
+    case 'users':
       return (
         <FaUsers
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
     default:
       return (
         <FaCodeBranch
           className="text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 mr-2"
-          style={{ animation: "spin 2s linear infinite" }}
+          style={{ animation: 'spin 2s linear infinite' }}
         />
       );
   }
@@ -80,20 +80,20 @@ const handleIconSelection = (icon: string) => {
 
 const handleColor = (color: string) => {
   switch (color) {
-    case "blue":
-      return "from-[#18397C] to-[#1F489E] border-[#00A9FF] shadow-[#2A2B7C]";
-    case "red":
-      return "from-[#7A1C1A] to-[#BE2D2D] border-[#E99DC3] shadow-[#4F243B]";
-    case "green":
-      return "from-[#2C5437] to-[#3D744C] border-[#0EA100] shadow-[#153F37]";
-    case "yellow":
-      return "from-[#625C28] to-[#938A3C] border-[#E1C600] shadow-[#3E3720]";
-    case "purple":
-      return "from-[#411B6F] to-[#5A269A] border-[#BA00E1] shadow-[#2A2B7C]";
-    case "orange":
-      return "from-[#704323] to-[#A46334] border-[#FF6D00] shadow-[#4F243B]";
+    case 'blue':
+      return 'from-[#18397C] to-[#1F489E] border-[#00A9FF] shadow-[#2A2B7C]';
+    case 'red':
+      return 'from-[#7A1C1A] to-[#BE2D2D] border-[#E99DC3] shadow-[#4F243B]';
+    case 'green':
+      return 'from-[#2C5437] to-[#3D744C] border-[#0EA100] shadow-[#153F37]';
+    case 'yellow':
+      return 'from-[#625C28] to-[#938A3C] border-[#E1C600] shadow-[#3E3720]';
+    case 'purple':
+      return 'from-[#411B6F] to-[#5A269A] border-[#BA00E1] shadow-[#2A2B7C]';
+    case 'orange':
+      return 'from-[#704323] to-[#A46334] border-[#FF6D00] shadow-[#4F243B]';
     default:
-      return "from-[#0A1A35] to-[#0D0E27] border-[#00A9FF] shadow-[#2A2B7C]";
+      return 'from-[#0A1A35] to-[#0D0E27] border-[#00A9FF] shadow-[#2A2B7C]';
   }
 };
 
