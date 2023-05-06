@@ -1,29 +1,37 @@
 // NEXT
-import Image from "next/image";
-import Head from "next/head";
-import Link from "next/link";
+import Image from 'next/image';
+import Head from 'next/head';
+import Link from 'next/link';
+import type { Metadata } from 'next';
 
 // HARD CODED DATA
-import { CardData } from "@/data";
+import { CardData } from '@/data';
 
 // ICONS
-import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 // COMPONENTS
-import GlowingEffect from "@/components/GlowingEffect";
-import GradientText from "@/components/GradientText";
-import Card from "@/components/Card";
+import GlowingEffect from '@/components/GlowingEffect';
+import GradientText from '@/components/GradientText';
+import Card from '@/components/Card';
 
 // STYLES
-import "../../public/glowing-effect.css";
-import "../app/globals.css";
+import '../../public/glowing-effect.css';
+import '../app/globals.css';
 
 // FONTS
-import { workSans } from "../../lib/fonts/workSans";
+import { workSans } from '../../lib/fonts/workSans';
+
+// METADATA
+export const metadata: Metadata = {
+  title: 'OffQuest - the company behind Caion 📱',
+  description:
+    'OffQuest is a purpose-driven tech company that builds software solutions to help individuals and organisations be more productive, connected and engaged while working, and give them the tools to do wonderful things. We are the company behind Caion, the super-app for all things work, and we are on a quest to change the way people work for the better.',
+};
 
 export default function Home() {
   return (
-    <div className={"min-h-screen bg-gray-100"}>
+    <div className={'min-h-screen bg-gray-100'}>
       <Head>
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
@@ -59,7 +67,7 @@ export default function Home() {
         <h2
           className={`${workSans.className} text-center text-5xl font-bold text-black dark:text-white mb-8`}
         >
-          Welcome to{" "}
+          Welcome to{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <a
               href="https://twitter.com/search?q=%23offquest&src=hashtag_click"
@@ -77,7 +85,7 @@ export default function Home() {
             <h2
               className={`${workSans.className} text-4xl text-black dark:text-white`}
             >
-              Follow us on our{" "}
+              Follow us on our{' '}
               <GradientText
                 text="quest to change the industry"
                 size="text-4xl"
@@ -127,7 +135,7 @@ export default function Home() {
             <h2
               className={`${workSans.className} text-start text-4xl text-black dark:text-white`}
             >
-              We are currently{" "}
+              We are currently{' '}
               <GradientText
                 text="building our first product"
                 size="text-4xl"
@@ -171,7 +179,7 @@ export default function Home() {
         <h2
           className={`${workSans.className} text-center text-5xl font-bold text-black dark:text-white my-8 p-20`}
         >
-          The Quest starts in{" "}
+          The Quest starts in{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="2023" size="text-5xl" />
           </span>
