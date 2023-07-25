@@ -14,6 +14,7 @@ import { FaLinkedin, FaTwitter } from 'react-icons/fa';
 import GlowingEffect from '@/components/GlowingEffect';
 import GradientText from '@/components/GradientText';
 import Card from '@/components/Card';
+import XLogo from '@/components/XLogo';
 
 // STYLES
 import '../../public/glowing-effect.css';
@@ -56,12 +57,11 @@ export default function Home() {
             </h1>
           </div>
           <div className="flex flex-row items-center">
-            <a href="https://www.linkedin.com/company/offquest" target="_blank">
-              <FaLinkedin className="text-black dark:text-white text-2xl hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
-            </a>
-            <a href="https://twitter.com/offquesthq" target="_blank">
-              <FaTwitter className="text-black dark:text-white text-2xl ml-4 hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" />
-            </a>
+            <Link href="https://x.com/offquesthq" target="_blank">
+              <div className="text-white w-6 h-6 text-2xl ml-4 hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 group">
+                <XLogo color="text-white group-hover:text-[#26a7de]" />
+              </div>
+            </Link>
           </div>
         </div>
       </header>
@@ -165,7 +165,7 @@ export default function Home() {
         <h2 className="text-center text-5xl font-bold text-black dark:text-white my-8 p-20">
           The Quest starts in{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
-            <GradientText text="2023" size="text-5xl" />
+            <GradientText text="Fall 2023" size="text-5xl" />
           </span>
         </h2>
       </main>
@@ -176,11 +176,10 @@ export default function Home() {
         <p className="text-center text-gray-600 text-sm my-4 w-full tablet:w-1/2">
           &copy; {new Date().getFullYear()} - All rights reserved. OffQuest is a
           French Societe par Actions Simplifiee (SAS) registered in Paris,
-          France under company number 952107431, whose legal trading name is
-          Caion.
+          France under company number 952107431.
         </p>
         <Link
-          href="https://www.notion.so/caion/Privacy-Policy-1957ad2f3f0b4e0dbdecbe9a3096b6ff?pvs=4"
+          href="https://sarsburydarwell.notion.site/Privacy-Policy-afa1856985e54b9899cc8776f79f31eb?pvs=4"
           passHref
           target="_blank"
           className="text-center text-gray-600 text-sm hover:text-purple-500"
