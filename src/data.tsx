@@ -2,14 +2,14 @@ export const CardData = [
   {
     title: 'Open Source',
     description:
-      "We believe that open source is key to unlocking innovation, that's why we embrace open-source technology, making our products accessible to anyone willing to contribute.",
+      "We believe that open source is key to unlocking innovation, that's why we embrace open-source technology, making all of our products accessible to anyone willing to contribute.",
     icon: 'code-branch',
     color: 'blue',
   },
   {
     title: 'Disruptive Innovation',
     description:
-      "We don't just create new products. We redefine entire industries. We think outside the box, dare everything, test our hypotheses, perform extensive user research to solve real, complex problems.",
+      'Our ambition is to redefine entire industries with leading products. We think outside the box, dare everything, test our hypotheses, perform extensive user research to solve real, complex problems.',
     icon: 'lightbulb',
     color: 'red',
   },
@@ -30,7 +30,7 @@ export const CardData = [
   {
     title: 'Sound Financials',
     description:
-      "We believe the key to success is innovation. We don't create products just to make money; we make money to build better products. Our focus is on creating the best possible experiences for our community, and we believe that if we do that well, profits will follow. We will never sacrifice our values for short-term gains.",
+      "We believe the key to success is innovation. We don't create products just to make money; we make money to build better products. Our focus is on creating the best possible experiences for our community, and we believe that if we do that well, profits will follow. We will never sacrifice our long-term vision for short-term gains.",
     icon: 'pound-sign',
     color: 'purple',
   },
