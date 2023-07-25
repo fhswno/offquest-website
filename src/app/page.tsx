@@ -20,7 +20,11 @@ import '../../public/glowing-effect.css';
 import '../app/globals.css';
 
 // FONTS
-import { workSans } from '../../lib/fonts/workSans';
+import { Work_Sans } from 'next/font/google';
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+});
 
 // METADATA
 export const metadata: Metadata = {
@@ -31,7 +35,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className={'min-h-screen bg-gray-100'}>
+    <div className={`min-h-screen bg-gray-100 ${workSans.className}`}>
       <Head>
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
@@ -47,9 +51,7 @@ export default function Home() {
               priority
               className="hover:animate-pulse"
             />
-            <h1
-              className={`${workSans.className} text-xl font-semibold text-black dark:text-white ml-2`}
-            >
+            <h1 className="text-xl font-semibold text-black dark:text-white ml-2">
               OffQuest
             </h1>
           </div>
@@ -64,9 +66,7 @@ export default function Home() {
         </div>
       </header>
       <main className="py-20 flex flex-col items-center justify-center bg-white dark:bg-black">
-        <h2
-          className={`${workSans.className} text-center text-5xl font-bold text-black dark:text-white mb-8`}
-        >
+        <h2 className="text-center text-5xl font-bold text-black dark:text-white mb-8">
           Welcome to{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <a
@@ -82,25 +82,19 @@ export default function Home() {
         </div>
         <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col items-start desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
           <div className="flex flex-col desktop:w-1/2 h-full tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
-            <h2
-              className={`${workSans.className} text-4xl text-black dark:text-white`}
-            >
+            <h2 className="text-4xl text-black dark:text-white">
               Follow us on our{' '}
               <GradientText
                 text="quest to change the industry"
                 size="text-4xl"
               ></GradientText>
             </h2>
-            <p
-              className={`${workSans.className} my-6 text-black dark:text-white`}
-            >
+            <p className="my-6 text-black dark:text-white">
               We are a team of innovators, on a quest to build leading tech
               products, which will dramatically change the way people interact
               with the world around them.
             </p>
-            <p
-              className={`${workSans.className} mb-6 text-black dark:text-white`}
-            >
+            <p className="mb-6 text-black dark:text-white">
               Our goal is to solve real world problems, by creating
               beautifully-crafted products that are easy to use, great to look
               at, and most importantly, make a difference.
@@ -132,25 +126,19 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col desktop:w-1/2 h-full  tablet:w-1/2 mobile:w-full mobile:order-1 smallMobile:order-1 desktop:order-1 tablet:order-1 ">
-            <h2
-              className={`${workSans.className} text-start text-4xl text-black dark:text-white`}
-            >
+            <h2 className="text-start text-4xl text-black dark:text-white">
               We are currently{' '}
               <GradientText
                 text="building our first product"
                 size="text-4xl"
               ></GradientText>
             </h2>
-            <p
-              className={`${workSans.className} my-6 text-black dark:text-white`}
-            >
+            <p className="my-6 text-black dark:text-white">
               This product will provide a game-changing solution to a problem
               everyone faces, and will be available to the public in the coming
               months.
             </p>
-            <p
-              className={`${workSans.className} mb-6 text-black dark:text-white`}
-            >
+            <p className="mb-6 text-black dark:text-white">
               Our diverse team of developers, designers and experts are building
               a community-driven product, which will get people together, help
               them achieve their goals, and provide them with the tools they
@@ -158,9 +146,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h2
-          className={`${workSans.className} text-center text-5xl font-bold text-black dark:text-white mb-8 mt-20`}
-        >
+        <h2 className="text-center text-5xl font-bold text-black dark:text-white mb-8 mt-20">
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="Our Values" size="text-5xl" />
           </span>
@@ -176,9 +162,7 @@ export default function Home() {
             />
           ))}
         </div>
-        <h2
-          className={`${workSans.className} text-center text-5xl font-bold text-black dark:text-white my-8 p-20`}
-        >
+        <h2 className="text-center text-5xl font-bold text-black dark:text-white my-8 p-20">
           The Quest starts in{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="2023" size="text-5xl" />
@@ -186,14 +170,10 @@ export default function Home() {
         </h2>
       </main>
       <footer className="bg-gray-300 dark:bg-black py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
-        <p
-          className={`${workSans.className} text-center text-gray-600 text-sm`}
-        >
+        <p className="text-center text-gray-600 text-sm">
           Built with ❤️ by OffQuest Team in London, using Next.js & Tailwind CSS
         </p>
-        <p
-          className={`${workSans.className} text-center text-gray-600 text-sm my-4 w-full tablet:w-1/2`}
-        >
+        <p className="text-center text-gray-600 text-sm my-4 w-full tablet:w-1/2">
           &copy; {new Date().getFullYear()} - All rights reserved. OffQuest is a
           French Societe par Actions Simplifiee (SAS) registered in Paris,
           France under company number 952107431, whose legal trading name is
@@ -203,7 +183,7 @@ export default function Home() {
           href="https://www.notion.so/caion/Privacy-Policy-1957ad2f3f0b4e0dbdecbe9a3096b6ff?pvs=4"
           passHref
           target="_blank"
-          className={`${workSans.className} text-center text-gray-600 text-sm hover:text-purple-500`}
+          className="text-center text-gray-600 text-sm hover:text-purple-500"
         >
           Privacy Policy
         </Link>
