@@ -16,13 +16,13 @@ const Hero = () => {
       className="flex flex-col items-start justify-start w-full h-screen gap-10 p-10 pt-40 text-white"
     >
       <h1 className="w-2/3 text-5xl leading-tight">
-        We're making <span className="z-10 underline-effect">top-tier</span>{' '}
-        Software accessible to{' '}
-        <span className="z-10 underline-effect">everyone</span>.
+        We&apos;re making{' '}
+        <span className="z-10 underline-effect">top-tier</span> Software
+        accessible to <span className="z-10 underline-effect">everyone</span>.
       </h1>
       <p className="w-1/2 text-lg">
         OffQuest is a software company specialised in FinTech and Productivity
-        tools. We're on a quest to build unique, life-changing FinTech SaaS
+        tools. We&apos;re on a quest to build unique, life-changing FinTech SaaS
         products, and empower developers to build their own.
       </p>
       <Link
