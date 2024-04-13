@@ -133,12 +133,12 @@ export default function Home() {
       </main>
       <footer className="flex flex-col items-center justify-center px-4 py-6 bg-gray-300 dark:bg-black sm:px-6 lg:px-8">
         <p className="text-sm text-center text-gray-600">
-          Built with ❤️ by OffQuest Team in London, using Next.js & Tailwind CSS
+          Built with ❤️ in London, using Next.js & Tailwind CSS
         </p>
         <p className="w-full my-4 text-sm text-center text-gray-600 tablet:w-1/2">
           &copy; {new Date().getFullYear()} - All rights reserved. OffQuest is a
-          French Societe par Actions Simplifiee (SAS) registered in Paris,
-          France under company number 952107431.
+          Simplified Joint Stock Company (SAS) registered in Paris, France under
+          company number 952107431.
         </p>
         <Link
           href="https://sarsburydarwell.notion.site/Privacy-Policy-afa1856985e54b9899cc8776f79f31eb?pvs=4"
