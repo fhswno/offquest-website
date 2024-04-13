@@ -7,15 +7,15 @@ import type { Metadata } from 'next';
 // HARD CODED DATA
 import { CardData } from '@/data';
 
-// ICONS
-import { FaLinkedin, FaTwitter } from 'react-icons/fa';
-
 // COMPONENTS
 import GlowingEffect from '@/components/GlowingEffect';
 import GradientText from '@/components/GradientText';
 import Card from '@/components/Card';
 import XLogo from '@/components/XLogo';
 import Hero from '@/components/Homepage/Hero';
+
+// NAVIGATION
+import Navbar from '@/components/Navigation/Navbar';
 
 // STYLES
 import '../../public/glowing-effect.css';
@@ -43,6 +43,7 @@ export default function Home() {
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
       </Head>
+      <Navbar />
       <Hero />
       <header className="z-10 px-4 py-6 bg-gray-300 dark:bg-neutral-900 drop-shadow-2xl sm:px-6 lg:px-8 shadow-black dark:shadow-white">
         <div className="flex items-center justify-between">
