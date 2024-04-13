@@ -45,30 +45,6 @@ export default function Home() {
       </Head>
       <Navbar />
       <Hero />
-      <header className="z-10 px-4 py-6 bg-gray-300 dark:bg-neutral-900 drop-shadow-2xl sm:px-6 lg:px-8 shadow-black dark:shadow-white">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <Image
-              src="/logo.png"
-              alt="OffQuest Logo"
-              width={40}
-              height={40}
-              priority
-              className="hover:animate-pulse"
-            />
-            <h1 className="ml-2 text-xl font-semibold text-black dark:text-white">
-              OffQuest
-            </h1>
-          </div>
-          <div className="flex flex-row items-center">
-            <Link href="https://x.com/offquesthq" target="_blank">
-              <div className="w-6 h-6 ml-4 text-2xl text-white transition duration-500 ease-in-out transform hover:text-blue-500 hover:-translate-y-1 hover:scale-110 group">
-                <XLogo color="text-white group-hover:text-[#26a7de]" />
-              </div>
-            </Link>
-          </div>
-        </div>
-      </header>
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
