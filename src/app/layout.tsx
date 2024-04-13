@@ -1,12 +1,23 @@
-import './globals.css';
+// NEXT
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'OffQuest',
+// METADATA
+export const metadata: Metadata = {
+  title:
+    'OffQuest - Making top technology open-source and freely available to everyone',
   description:
-    'On a mission to change entire industries, with a focus on open-source technology and disruptive innovation. We solve real, complex problems, by creating beautiful, intuitive products that are both functional and enjoyable.',
+    'OffQuest is a software company that builds and maintains top-tier, mostly open-source software solutions that empowers individuals and transforms communities. Our mission is to make top technology open-source and freely available to everyone. Explore our website to learn more about our products, services, and the team behind them.',
 };
 
+// STYLES
 import './globals.css';
+
+// FONTS
+import { Work_Sans } from 'next/font/google';
+const workSans = Work_Sans({
+  subsets: ['latin'],
+  variable: '--font-work-sans',
+});
 
 export default function RootLayout({
   children,
@@ -14,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={workSans.className}>
       <body>{children}</body>
     </html>
   );
