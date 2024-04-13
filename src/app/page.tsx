@@ -11,7 +11,6 @@ import { CardData } from '@/data';
 import GlowingEffect from '@/components/GlowingEffect';
 import GradientText from '@/components/GradientText';
 import Card from '@/components/Card';
-import XLogo from '@/components/XLogo';
 import Hero from '@/components/Homepage/Hero';
 
 // NAVIGATION
