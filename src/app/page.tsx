@@ -29,9 +29,10 @@ const workSans = Work_Sans({
 
 // METADATA
 export const metadata: Metadata = {
-  title: 'OffQuest - the company behind Caion 📱',
+  title:
+    'OffQuest - Making top technology open-source and freely available to everyone',
   description:
-    'OffQuest is a purpose-driven tech company that builds software solutions to help individuals and organisations be more productive, connected and engaged while working, and give them the tools to do wonderful things. We are the company behind Caion, the super-app for all things work, and we are on a quest to change the way people work for the better.',
+    'OffQuest is a software company that builds and maintains top-tier, mostly open-source software solutions that empowers individuals and transforms communities. Our mission is to make top technology open-source and freely available to everyone. Explore our website to learn more about our products, services, and the team behind them.',
 };
 
 export default function Home() {
