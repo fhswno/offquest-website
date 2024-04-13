@@ -9,13 +9,10 @@ module.exports = {
         'source-code-pro': ['Source Code Pro', 'monospace'],
       },
       screens: {
-        smallMobile: '320px',
-
-        mobile: '550px',
-
-        tablet: '840px',
-
-        desktop: '1076px',
+        mobile: '320px',
+        tablet: '640px',
+        laptop: '1076px',
+        desktop: '1480px',
       },
     },
   },
