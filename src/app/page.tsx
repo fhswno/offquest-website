@@ -41,7 +41,7 @@ export default function Home() {
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
       </Head>
-      <header className="bg-gray-300 dark:bg-neutral-900 drop-shadow-2xl py-6 px-4 sm:px-6 lg:px-8 z-10 shadow-black dark:shadow-white">
+      <header className="z-10 px-4 py-6 bg-gray-300 dark:bg-neutral-900 drop-shadow-2xl sm:px-6 lg:px-8 shadow-black dark:shadow-white">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Image
@@ -52,21 +52,21 @@ export default function Home() {
               priority
               className="hover:animate-pulse"
             />
-            <h1 className="text-xl font-semibold text-black dark:text-white ml-2">
+            <h1 className="ml-2 text-xl font-semibold text-black dark:text-white">
               OffQuest
             </h1>
           </div>
           <div className="flex flex-row items-center">
             <Link href="https://x.com/offquesthq" target="_blank">
-              <div className="text-white w-6 h-6 text-2xl ml-4 hover:text-blue-500 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 group">
+              <div className="w-6 h-6 ml-4 text-2xl text-white transition duration-500 ease-in-out transform hover:text-blue-500 hover:-translate-y-1 hover:scale-110 group">
                 <XLogo color="text-white group-hover:text-[#26a7de]" />
               </div>
             </Link>
           </div>
         </div>
       </header>
-      <main className="py-20 flex flex-col items-center justify-center bg-white dark:bg-black">
-        <h2 className="text-center text-5xl font-bold text-black dark:text-white mb-8">
+      <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
+        <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <a
@@ -80,8 +80,8 @@ export default function Home() {
         <div className="blur-lg">
           <GlowingEffect />
         </div>
-        <div className="w-full flex desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col items-start desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
-          <div className="flex flex-col desktop:w-1/2 h-full tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
+        <div className="flex items-start w-full desktop:flex-row mobile:flex-col tablet:flex-row smallMobile:flex-col desktop:h-96 mobile:h-fit tablet:h-fit smallMobile:h-fit desktop:p-20 tablet:p-20 mobile:p-14 smallMobile:p-10">
+          <div className="flex flex-col h-full desktop:w-1/2 tablet:w-1/2 mobile:w-full desktop:mb-0 tablet:mb-0 mobile:mb-0 smallMobile:mb-20">
             <h2 className="text-4xl text-black dark:text-white">
               Follow us on our{' '}
               <GradientText
@@ -100,7 +100,7 @@ export default function Home() {
               at, and most importantly, make a difference.
             </p>
           </div>
-          <div className="desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-fit">
+          <div className="flex flex-col items-center justify-center desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 h-fit">
             <div className="blur-3xl">
               <Image
                 src="/planet.svg"
@@ -112,8 +112,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-16 w-full flex desktop:flex-row mobile:flex-col smallMobile:flex-col tablet:flex-row items-start desktop:h-fit mobile:h-fit tablet:h-fit desktop:p-20 tablet:p-16 mobile:p-14 smallMobile:p-10">
-          <div className="desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 flex flex-col items-center justify-center h-full mobile:order-2 smallMobile:order-2 desktop:order-1 tablet:order-1">
+        <div className="flex items-start w-full mt-16 desktop:flex-row mobile:flex-col smallMobile:flex-col tablet:flex-row desktop:h-fit mobile:h-fit tablet:h-fit desktop:p-20 tablet:p-16 mobile:p-14 smallMobile:p-10">
+          <div className="flex flex-col items-center justify-center h-full desktop:w-1/2 mobile:w-full smallMobile:w-full tablet:w-1/2 mobile:order-2 smallMobile:order-2 desktop:order-1 tablet:order-1">
             <div className="blur-xl mobile:ml-10 tablet:ml-0 desktop:ml-0">
               <Image
                 src="/test.svg"
@@ -125,8 +125,8 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="flex flex-col desktop:w-1/2 h-full  tablet:w-1/2 mobile:w-full mobile:order-1 smallMobile:order-1 desktop:order-1 tablet:order-1 ">
-            <h2 className="text-start text-4xl text-black dark:text-white">
+          <div className="flex flex-col h-full desktop:w-1/2 tablet:w-1/2 mobile:w-full mobile:order-1 smallMobile:order-1 desktop:order-1 tablet:order-1 ">
+            <h2 className="text-4xl text-black text-start dark:text-white">
               We are currently{' '}
               <GradientText
                 text="building our first product"
@@ -146,12 +146,12 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <h2 className="text-center text-5xl font-bold text-black dark:text-white mb-8 mt-20">
+        <h2 className="mt-20 mb-8 text-5xl font-bold text-center text-black dark:text-white">
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="Our Values" size="text-5xl" />
           </span>
         </h2>
-        <div className="flex flex-row flex-wrap justify-center items-start w-full desktop:p-20 tablet:p-20 mobile:p-20 smallMobile:p-10">
+        <div className="flex flex-row flex-wrap items-start justify-center w-full desktop:p-20 tablet:p-20 mobile:p-20 smallMobile:p-10">
           {CardData.map((card, index) => (
             <Card
               key={index}
@@ -162,18 +162,18 @@ export default function Home() {
             />
           ))}
         </div>
-        <h2 className="text-center text-5xl font-bold text-black dark:text-white my-8 p-20">
+        <h2 className="p-20 my-8 text-5xl font-bold text-center text-black dark:text-white">
           The Quest starts in{' '}
           <span className="hover:animate-pulse hover:cursor-pointer">
             <GradientText text="Fall 2023" size="text-5xl" />
           </span>
         </h2>
       </main>
-      <footer className="bg-gray-300 dark:bg-black py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
-        <p className="text-center text-gray-600 text-sm">
+      <footer className="flex flex-col items-center justify-center px-4 py-6 bg-gray-300 dark:bg-black sm:px-6 lg:px-8">
+        <p className="text-sm text-center text-gray-600">
           Built with ❤️ by OffQuest Team in London, using Next.js & Tailwind CSS
         </p>
-        <p className="text-center text-gray-600 text-sm my-4 w-full tablet:w-1/2">
+        <p className="w-full my-4 text-sm text-center text-gray-600 tablet:w-1/2">
           &copy; {new Date().getFullYear()} - All rights reserved. OffQuest is a
           French Societe par Actions Simplifiee (SAS) registered in Paris,
           France under company number 952107431.
@@ -182,7 +182,7 @@ export default function Home() {
           href="https://sarsburydarwell.notion.site/Privacy-Policy-afa1856985e54b9899cc8776f79f31eb?pvs=4"
           passHref
           target="_blank"
-          className="text-center text-gray-600 text-sm hover:text-purple-500"
+          className="text-sm text-center text-gray-600 hover:text-purple-500"
         >
           Privacy Policy
         </Link>
