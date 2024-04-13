@@ -30,7 +30,7 @@ const Hero = () => {
         className="px-6 py-3 mt-4 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
       >
         Learn More
-        <ChevronDown className="inline w-5 h-5 ml-2" />
+        <span className="inline w-5 h-5 ml-2">🌍</span>
       </Link>
     </section>
   );
