@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
-import type { Metadata } from 'next';
 
 // HARD CODED DATA
 import { CardData } from '@/data';
@@ -18,26 +17,10 @@ import Navbar from '@/components/Navigation/Navbar';
 
 // STYLES
 import '../../public/glowing-effect.css';
-import '../app/globals.css';
-
-// FONTS
-import { Work_Sans } from 'next/font/google';
-const workSans = Work_Sans({
-  subsets: ['latin'],
-  variable: '--font-work-sans',
-});
-
-// METADATA
-export const metadata: Metadata = {
-  title:
-    'OffQuest - Making top technology open-source and freely available to everyone',
-  description:
-    'OffQuest is a software company that builds and maintains top-tier, mostly open-source software solutions that empowers individuals and transforms communities. Our mission is to make top technology open-source and freely available to everyone. Explore our website to learn more about our products, services, and the team behind them.',
-};
 
 export default function Home() {
   return (
-    <div className={`min-h-screen bg-gray-100 ${workSans.className}`}>
+    <div className="min-h-screen bg-gray-100">
       <Head>
         <title>OffQuest</title>
         <link rel="shortcut icon" href="/logo.png" />
