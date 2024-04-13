@@ -1,5 +1,8 @@
-// COMPONENTS
-import Navbar from '../Navigation/Navbar';
+// NEXT
+import Link from 'next/link';
+
+// ICONS
+import { ChevronDown } from 'react-feather';
 
 const Hero = () => {
   return (
@@ -10,11 +13,25 @@ const Hero = () => {
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
       }}
-      className="w-full h-screen text-white"
+      className="flex flex-col items-start justify-start w-full h-screen gap-10 p-10 pt-40 text-white"
     >
-      <Navbar />
-
-      <h1>OffQuest</h1>
+      <h1 className="w-2/3 text-5xl leading-tight">
+        We're making <span className="z-10 underline-effect">top-tier</span>{' '}
+        Software accessible to{' '}
+        <span className="z-10 underline-effect">everyone</span>.
+      </h1>
+      <p className="w-1/2 text-lg">
+        OffQuest is a software company specialised in FinTech and Productivity
+        tools. We're on a quest to build unique, life-changing FinTech SaaS
+        products, and empower developers to build their own.
+      </p>
+      <Link
+        href="/#products"
+        className="px-6 py-3 mt-4 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+      >
+        Learn More
+        <ChevronDown className="inline w-5 h-5 ml-2" />
+      </Link>
     </section>
   );
 };
