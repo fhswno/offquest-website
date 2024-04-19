@@ -1,6 +1,5 @@
 // NEXT
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
 
 // HARD CODED DATA
@@ -29,6 +28,7 @@ export default function Home() {
       <Ventures />
       <Software />
       <Contact />
+
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
