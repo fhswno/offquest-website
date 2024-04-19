@@ -16,9 +16,11 @@ const Software = () => {
           OffQuest develops and distributes{' '}
           <span
             className="z-10 underline-effect"
-            style={{
-              '--underline-color': '#41B06E',
-            }}
+            style={
+              {
+                '--underline-color': '#41B06E',
+              } as React.CSSProperties
+            }
           >
             life-changing
           </span>{' '}
