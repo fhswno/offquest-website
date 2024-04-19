@@ -4,14 +4,24 @@ import Image from 'next/image';
 // COMPONENTS
 import Badge from '../Branding/Badge';
 
+// ENUMS
+import { ShadowColor } from '../../../enums/branding-enums';
+
 const Software = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-10 px-10 text-white bg-gray-900 py-28">
-      <Badge text="Software" />
+      <Badge text="Software" shadowColor={ShadowColor.GREEN} />
       <div className="flex flex-col items-center justify-center w-2/3 gap-12">
         <h2 className="text-4xl leading-tight text-center">
           OffQuest develops and distributes{' '}
-          <span className="z-10 underline-effect">life-changing</span>{' '}
+          <span
+            className="z-10 underline-effect"
+            style={{
+              '--underline-color': '#41B06E',
+            }}
+          >
+            life-changing
+          </span>{' '}
           open-source productivity software.
         </h2>
         <p className="text-lg leading-loose text-center">
@@ -27,7 +37,7 @@ const Software = () => {
           width={800}
           height={800}
           priority
-          className="border border-blue-500 rounded-xl"
+          className="border border-green-500 rounded-xl"
           blurDataURL="/software.png"
           placeholder="blur"
         />
