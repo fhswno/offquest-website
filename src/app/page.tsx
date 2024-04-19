@@ -11,13 +11,13 @@ import GlowingEffect from '@/components/GlowingEffect';
 import GradientText from '@/components/GradientText';
 import Card from '@/components/Card';
 import Hero from '@/components/Homepage/Hero';
+import Ventures from '@/components/Homepage/Ventures';
 
 // NAVIGATION
 import Navbar from '@/components/Navigation/Navbar';
 
 // STYLES
 import '../../public/glowing-effect.css';
-import Ventures from '@/components/Homepage/Ventures';
 
 export default function Home() {
   return (
