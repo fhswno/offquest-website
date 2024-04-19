@@ -17,16 +17,14 @@ import Navbar from '@/components/Navigation/Navbar';
 
 // STYLES
 import '../../public/glowing-effect.css';
+import Ventures from '@/components/Homepage/Ventures';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gray-100">
-      <Head>
-        <title>OffQuest</title>
-        <link rel="shortcut icon" href="/logo.png" />
-      </Head>
+    <div className="min-h-screen bg-gray-900">
       <Navbar />
       <Hero />
+      <Ventures />
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
