@@ -23,7 +23,7 @@ const Hero = () => {
         financial decisions.
       </p>
       <Link
-        href="/#products"
+        href="/#ventures"
         className="px-6 py-3 mt-4 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
       >
         Learn More
