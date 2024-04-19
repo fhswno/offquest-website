@@ -1,20 +1,13 @@
+// NEXT
 import Image from 'next/image';
+
+// COMPONENTS
+import Badge from '../Branding/Badge';
 
 const Ventures = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-10 px-10 text-white bg-gray-900 py-28">
-      <div className="flex items-center justify-center gap-4 p-4 text-2xl bg-gray-700 border border-gray-500 shadow-md rounded-xl w-fit shadow-blue-600">
-        <Image
-          src="/logo.png"
-          alt="OffQuest Logo"
-          width={40}
-          height={40}
-          priority
-          blurDataURL="/logo.png"
-          placeholder="blur"
-        />
-        <p className="text-3xl">Ventures</p>
-      </div>
+      <Badge text="Ventures" />
       <div className="flex flex-col items-center justify-center w-2/3 gap-12">
         <h2 className="text-4xl leading-tight text-center">
           OffQuest Ventures builds, maintains and scales{' '}
