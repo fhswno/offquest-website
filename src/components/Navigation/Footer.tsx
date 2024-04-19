@@ -2,9 +2,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-// COMPONENTS
-import Wordmark from '../Branding/Wordmark';
-
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center justify-center gap-6 px-10 py-16">
