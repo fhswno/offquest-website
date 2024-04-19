@@ -118,7 +118,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
         <button
-          className="px-6 py-3 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+          className="px-6 py-3 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg cursor-pointer hover:bg-blue-800 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
           type="submit"
           disabled={Object.values(formDate).some((value) => !value.trim())}
         >
