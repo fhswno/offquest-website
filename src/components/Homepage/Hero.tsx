@@ -21,9 +21,9 @@ const Hero = () => {
         accessible to <span className="z-10 underline-effect">everyone</span>.
       </h1>
       <p className="w-1/2 text-lg">
-        OffQuest is a software company specialised in FinTech and Productivity
-        tools. We&apos;re on a quest to build unique, life-changing FinTech SaaS
-        products, and empower developers to build their own.
+        OffQuest is a software company specialised in FinTech, on a quest to
+        build unique, life-changing products to help people make better
+        financial decisions.
       </p>
       <Link
         href="/#products"

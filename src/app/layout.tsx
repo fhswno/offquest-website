@@ -3,8 +3,7 @@ import { Metadata } from 'next';
 
 // METADATA
 export const metadata: Metadata = {
-  title:
-    'OffQuest - Making top technology open-source and freely available to everyone',
+  title: "OffQuest - We're making top-tier Software accessible to everyone.",
   description:
     'OffQuest is a software company that builds and maintains top-tier, mostly open-source software solutions that empowers individuals and transforms communities. Our mission is to make top technology open-source and freely available to everyone. Explore our website to learn more about our products, services, and the team behind them.',
 };
