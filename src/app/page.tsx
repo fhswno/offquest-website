@@ -13,6 +13,7 @@ import Card from '@/components/Card';
 import Hero from '@/components/Homepage/Hero';
 import Ventures from '@/components/Homepage/Ventures';
 import Software from '@/components/Homepage/Software';
+import Contact from '@/components/Contact/Contact';
 
 // NAVIGATION
 import Navbar from '@/components/Navigation/Navbar';
@@ -27,6 +28,7 @@ export default function Home() {
       <Hero />
       <Ventures />
       <Software />
+      <Contact />
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
