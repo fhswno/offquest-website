@@ -6,7 +6,10 @@ import Badge from '../Branding/Badge';
 
 const Ventures = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 px-10 text-white bg-gray-900 py-28">
+    <section
+      className="flex flex-col items-center justify-center gap-10 px-10 text-white bg-gray-900 py-28"
+      id="ventures"
+    >
       <Badge text="Ventures" />
       <div className="flex flex-col items-center justify-center w-2/3 gap-12">
         <h2 className="text-4xl leading-tight text-center">
