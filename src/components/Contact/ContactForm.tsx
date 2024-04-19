@@ -66,6 +66,12 @@ const ContactForm = () => {
       })
         .then((res) => {
           if (res.ok) {
+            // Clear the form
+            setFormData({
+              name: '',
+              email: '',
+              message: '',
+            });
             resolve(res);
           } else {
             reject(res);
@@ -81,13 +87,6 @@ const ContactForm = () => {
       loading: 'Sending...',
       success: 'Message Sent!',
       error: 'An error occurred. Please try again later.',
-    });
-
-    // Clear the form
-    setFormData({
-      name: '',
-      email: '',
-      message: '',
     });
   };
 
