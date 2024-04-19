@@ -8,9 +8,6 @@ import Contact from '@/components/Contact/Contact';
 import Navbar from '@/components/Navigation/Navbar';
 import Footer from '@/components/Navigation/Footer';
 
-// STYLES
-import '../../public/glowing-effect.css';
-
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-900">
