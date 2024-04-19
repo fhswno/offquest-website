@@ -70,12 +70,6 @@ const ContactForm = () => {
           } else {
             reject(res);
           }
-          // Clear the form
-          setFormData({
-            name: '',
-            email: '',
-            message: '',
-          });
         })
         .catch((err) => {
           reject(err);
@@ -88,30 +82,47 @@ const ContactForm = () => {
       success: 'Message Sent!',
       error: 'An error occurred. Please try again later.',
     });
+
+    // Clear the form
+    setFormData({
+      name: '',
+      email: '',
+      message: '',
+    });
   };
 
   return (
-    <form className="flex flex-col items-center justify-center w-2/5 gap-4">
+    <form
+      className="flex flex-col items-center justify-center w-2/5 gap-4"
+      onSubmit={submitForm}
+    >
       <div className="flex flex-col items-center justify-center w-full gap-4">
         <input
           type="text"
+          name="name"
           placeholder="Your Name"
           className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
           onChange={handleChange}
         />
         <input
           type="email"
+          name="email"
           placeholder="Your Email"
           className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
           onChange={handleChange}
         />
         <textarea
           placeholder="Your Message..."
+          name="message"
           className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
           rows={4}
           onChange={handleChange}
         />
-        <button className="px-6 py-3 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2">
+        <button
+          className="px-6 py-3 font-medium text-white transition duration-500 ease-in-out transform bg-blue-600 rounded-lg hover:bg-blue-700 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+          type="submit"
+          disabled={Object.values(formDate).some((value) => !value.trim())}
+        >
           Send Message
         </button>
       </div>
