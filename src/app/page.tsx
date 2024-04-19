@@ -1,6 +1,5 @@
 // NEXT
 import Image from 'next/image';
-import Head from 'next/head';
 import Link from 'next/link';
 
 // HARD CODED DATA
@@ -17,6 +16,7 @@ import Contact from '@/components/Contact/Contact';
 
 // NAVIGATION
 import Navbar from '@/components/Navigation/Navbar';
+import Footer from '@/components/Navigation/Footer';
 
 // STYLES
 import '../../public/glowing-effect.css';
@@ -29,6 +29,7 @@ export default function Home() {
       <Ventures />
       <Software />
       <Contact />
+      <Footer />
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
