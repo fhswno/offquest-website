@@ -1,9 +1,13 @@
 // NEXT
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Wordmark = () => {
   return (
-    <div className="flex items-center">
+    <Link
+      className="flex items-center duration-500 ease-in-out hover:scale-105"
+      href="/"
+    >
       <Image
         src="/logo.png"
         alt="OffQuest Logo"
@@ -15,7 +19,7 @@ const Wordmark = () => {
       <h1 className="ml-2 text-xl font-semibold text-black dark:text-white">
         OffQuest
       </h1>
-    </div>
+    </Link>
   );
 };
 
