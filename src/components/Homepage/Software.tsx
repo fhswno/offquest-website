@@ -1,5 +1,6 @@
 // NEXT
 import Image from 'next/image';
+import Link from 'next/link';
 
 // COMPONENTS
 import Badge from '../Branding/Badge';
@@ -33,6 +34,12 @@ const Software = () => {
           our goal is to get wonderful tools in the hands of everyone, so they
           can do wonderful things.
         </p>
+        <Link
+          className="px-6 py-3 mt-4 font-medium text-white transition duration-500 ease-in-out transform bg-green-600 rounded-lg hover:bg-green-800 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
+          href="/notly-retro"
+        >
+          Explore Notly Retro <span>🚀</span>
+        </Link>
         <Image
           src="/software.png"
           alt="Software"
