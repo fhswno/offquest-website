@@ -1,9 +1,6 @@
 // NEXT
 import Link from 'next/link';
 
-// ICONS
-import { ChevronDown } from 'react-feather';
-
 const Hero = () => {
   return (
     <section
