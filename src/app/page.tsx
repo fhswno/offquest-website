@@ -12,6 +12,7 @@ import GradientText from '@/components/GradientText';
 import Card from '@/components/Card';
 import Hero from '@/components/Homepage/Hero';
 import Ventures from '@/components/Homepage/Ventures';
+import Software from '@/components/Homepage/Software';
 
 // NAVIGATION
 import Navbar from '@/components/Navigation/Navbar';
@@ -25,6 +26,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Ventures />
+      <Software />
       <main className="flex flex-col items-center justify-center py-20 bg-white dark:bg-black">
         <h2 className="mb-8 text-5xl font-bold text-center text-black dark:text-white">
           Welcome to{' '}
