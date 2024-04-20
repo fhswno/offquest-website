@@ -92,7 +92,7 @@ const ContactForm = () => {
 
   return (
     <form
-      className="flex flex-col items-center justify-center w-2/5 gap-4"
+      className="flex flex-col items-center justify-center w-full gap-4 tablet:w-4/5 laptop:w-2/5"
       onSubmit={submitForm}
     >
       <div className="flex flex-col items-center justify-center w-full gap-4">
@@ -100,20 +100,20 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="Your Name"
-          className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
+          className="w-3/4 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg tablet:w-1/2 focus:outline-none"
           onChange={handleChange}
         />
         <input
           type="email"
           name="email"
           placeholder="Your Email"
-          className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
+          className="w-3/4 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg tablet:w-1/2 focus:outline-none"
           onChange={handleChange}
         />
         <textarea
           placeholder="Your Message..."
           name="message"
-          className="w-1/2 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg focus:outline-none"
+          className="w-3/4 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg tablet:w-1/2 focus:outline-none"
           rows={4}
           onChange={handleChange}
         />

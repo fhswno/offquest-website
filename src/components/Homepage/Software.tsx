@@ -12,8 +12,8 @@ const Software = () => {
   return (
     <section className="flex flex-col items-center justify-center gap-10 px-10 text-white bg-gray-900 py-28">
       <Badge text="Software" shadowColor={ShadowColor.GREEN} />
-      <div className="flex flex-col items-center justify-center w-2/3 gap-12">
-        <h2 className="text-4xl leading-tight text-center">
+      <div className="flex flex-col items-center justify-center w-full gap-12 tablet:w-3/4 laptop:w-2/3">
+        <h2 className="text-3xl leading-tight text-center laptop:text-4xl">
           OffQuest develops and distributes{' '}
           <span
             className="z-10 underline-effect"
@@ -27,7 +27,7 @@ const Software = () => {
           </span>{' '}
           open-source productivity software.
         </h2>
-        <p className="text-lg leading-loose text-center">
+        <p className="text-base leading-loose text-center laptop:text-lg">
           We believe that top-notch productivity should be made freely available
           and open-source so that everyone can benefit from it. From project
           management to personal finance, from knowledge bases to time tracking,
@@ -46,7 +46,7 @@ const Software = () => {
           width={800}
           height={800}
           priority
-          className="border border-green-500 rounded-xl"
+          className="w-4/5 border border-green-500 rounded-xl laptop:w-full desktop:w-2/3"
           blurDataURL="/software.png"
           placeholder="blur"
         />
