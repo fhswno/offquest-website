@@ -46,7 +46,7 @@ const Software = () => {
           width={800}
           height={800}
           priority
-          className="w-4/5 border border-green-500 rounded-xl laptop:w-full"
+          className="w-4/5 border border-green-500 rounded-xl laptop:w-full desktop:w-2/3"
           blurDataURL="/software.png"
           placeholder="blur"
         />
