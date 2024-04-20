@@ -16,6 +16,6 @@
   right: 0;
   bottom: 0;
   height: 20px;
-  background-color: #2563eb;
+  background-color: var(--underline-color, #2563eb);
   border-radius: 2px;
 }

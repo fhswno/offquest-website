@@ -8,6 +8,12 @@ export const metadata: Metadata = {
     'OffQuest is a software company that builds and maintains top-tier, mostly open-source software solutions that empowers individuals and transforms communities. Our mission is to make top technology open-source and freely available to everyone. Explore our website to learn more about our products, services, and the team behind them.',
 };
 
+// ANALYTICS
+import { Analytics } from '@vercel/analytics/react';
+
+// TOAST
+import { Toaster } from 'react-hot-toast';
+
 // STYLES
 import './globals.css';
 
@@ -25,7 +31,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={workSans.className}>
-      <body>{children}</body>
+      <body>
+        <Toaster />
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
