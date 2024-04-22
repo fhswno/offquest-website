@@ -21,9 +21,9 @@ const Footer = () => {
           OffQuest
         </h1>
       </Link>
-      <div className="flex flex-col items-center justify-center w-1/2 gap-6">
+      <div className="flex flex-col items-center justify-center w-4/5 gap-6 tablet:w-1/2">
         <p className="text-white">Made with ❤️ in London 🇬🇧</p>
-        <p className="text-center text-white">
+        <p className="text-sm text-center text-white tablet:text-base">
           © {new Date().getFullYear()} - All rights reserved. OffQuest is a
           Simplified Joint Stock Company (SAS) registered in Paris, France under
           company number 952107431.
