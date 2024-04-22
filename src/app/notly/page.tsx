@@ -71,7 +71,7 @@ const NotlyContent = () => {
         placeholder="blur"
       />
       <div className="flex flex-col items-center justify-center w-2/5 gap-5">
-        <h1 className="text-5xl leading-tight text-center">
+        <h1 className="text-5xl font-medium leading-tight text-center">
           Organise your life with Notly
         </h1>
         <p className="text-center">
