@@ -59,18 +59,18 @@ const NotlyNavbar = () => {
 
 const NotlyContent = () => {
   return (
-    <section className="flex flex-col items-center justify-center w-full gap-4 p-10 text-white">
+    <section className="flex flex-col items-center justify-center w-full gap-4 pt-10 text-white tablet:pt-0 tablet:p-10 ">
       <Image
         src="/notly-icon.png"
         alt="Notly Icon"
         width={300}
         height={300}
         priority
-        className="w-20 shadow-2xl desktop:w-24 hover:animate-pulse rounded-2xl shadow-gray-700"
+        className="w-16 shadow-2xl tablet:w-20 desktop:w-24 hover:animate-pulse rounded-2xl shadow-gray-700"
         blurDataURL="/notly-icon.png"
         placeholder="blur"
       />
-      <div className="flex flex-col items-center justify-center w-2/3 gap-5 laptop:w-1/2 desktop:w-2/5">
+      <div className="flex flex-col items-center justify-center w-full gap-5 tablet:w-2/3 laptop:w-1/2 desktop:w-2/5">
         <h1 className="text-4xl font-medium leading-tight text-center desktop:text-5xl">
           Organise your life with Notly
         </h1>
