@@ -11,7 +11,7 @@ const NotlyContent = () => {
         width={300}
         height={300}
         priority
-        className="w-16 shadow-2xl tablet:w-20 desktop:w-24 hover:animate-pulse rounded-2xl shadow-gray-700"
+        className="w-16 shadow-2xl tablet:w-20 desktop:w-24 rounded-2xl shadow-gray-700"
         blurDataURL="/notly-icon.png"
         placeholder="blur"
       />
