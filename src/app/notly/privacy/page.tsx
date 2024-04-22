@@ -66,9 +66,9 @@ const Page = () => {
         <p>
           Data security is managed by the user. We encourage users to implement
           appropriate security measures on their devices, as all data created or
-          stored within Notly remains under the user's control. Notly is not
-          responsible for the security of the device or any data breaches
-          resulting from unauthorized access to the user's device.
+          stored within Notly remains under the user&apos;s control. Notly is
+          not responsible for the security of the device or any data breaches
+          resulting from unauthorized access to the user&apos;s device.
         </p>
         <h2 className="text-2xl font-semibold tablet:text-3xl">
           4. User Rights and Controls
@@ -155,7 +155,7 @@ const Page = () => {
         <p>
           Users have the right to effective legal recourse in the event of any
           disputes arising from the terms of this policy. Dispute resolution
-          mechanisms are detailed on OffQuest's{' '}
+          mechanisms are detailed on OffQuest&apos;s{' '}
           <Link href="/privacy" className="underline">
             Privacy Policy
           </Link>
