@@ -36,9 +36,9 @@ const Software = () => {
         </p>
         <Link
           className="px-6 py-3 mt-4 font-medium text-white transition duration-500 ease-in-out transform bg-green-600 rounded-lg hover:bg-green-800 focus:shadow-outline focus:outline-none focus:ring-2 ring-offset-current ring-offset-2"
-          href="/notly-retro"
+          href="/notly"
         >
-          Explore Notly Retro <span>🚀</span>
+          Explore Notly <span>🚀</span>
         </Link>
         <Image
           src="/software.png"
