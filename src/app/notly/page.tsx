@@ -66,12 +66,12 @@ const NotlyContent = () => {
         width={300}
         height={300}
         priority
-        className="w-24 shadow-2xl hover:animate-pulse rounded-2xl shadow-gray-700"
+        className="w-20 shadow-2xl desktop:w-24 hover:animate-pulse rounded-2xl shadow-gray-700"
         blurDataURL="/notly-icon.png"
         placeholder="blur"
       />
-      <div className="flex flex-col items-center justify-center w-2/5 gap-5">
-        <h1 className="text-5xl font-medium leading-tight text-center">
+      <div className="flex flex-col items-center justify-center w-1/2 gap-5 laptop:w-2/5">
+        <h1 className="text-4xl font-medium leading-tight text-center desktop:text-5xl">
           Organise your life with Notly
         </h1>
         <p className="text-center">
