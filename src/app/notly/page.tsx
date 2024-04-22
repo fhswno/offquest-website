@@ -80,7 +80,7 @@ const NotlyContent = () => {
         </p>
         <Link
           href="/"
-          className="px-6 py-2 transition-colors duration-1000 ease-in-out transform border rounded-lg shadow-2xl border-amber-700 bg-gradient-to-t from-amber-900 to-amber-700 shadow-amber-500 hover:from-amber-700 hover:to-amber-900"
+          className="px-6 py-2 transition-colors duration-1000 ease-in-out transform border rounded-lg shadow-2xl border-amber-700 bg-gradient-to-t from-amber-900 to-amber-700 shadow-amber-950 hover:from-amber-700 hover:to-amber-900"
         >
           Coming soon on Android
         </Link>
