@@ -10,7 +10,7 @@ const Page = () => {
         <link rel="preload" href="/notly-background.png" as="image" />
       </Head>
       <main
-        className="flex flex-col items-center justify-start h-screen gap-10 p-10 text-white"
+        className="flex flex-col items-center justify-start h-screen gap-10 p-4 text-white tablet:p-10"
         style={{
           backgroundImage: `url('/notly-background.png')`,
           backgroundSize: 'cover',
@@ -30,25 +30,25 @@ export default Page;
 
 const NotlyNavbar = () => {
   return (
-    <nav className="flex flex-row items-center justify-between w-full p-4 text-white ">
+    <nav className="flex flex-row items-center justify-between w-full p-4 text-white">
       <Image
         src="/notly-wordmark.png"
         alt="Notly Logo"
         width={300}
         height={300}
         priority
-        className="w-36 laptop:w-44 hover:animate-pulse"
+        className="w-32 tablet:w-36 laptop:w-44 hover:animate-pulse"
       />
-      <div className="flex flex-row items-center gap-12">
+      <div className="flex flex-row items-center gap-2 tablet:gap-12">
         <Link
           href="/notly/privacy"
-          className="px-4 py-2 text-lg duration-500 ease-in-out rounded-lg laptop:text-xl hover:bg-orange-800"
+          className="px-4 py-2 text-base duration-500 ease-in-out rounded-lg tablet:text-lg laptop:text-xl hover:bg-orange-800"
         >
           Privacy
         </Link>
         <Link
           href="/"
-          className="px-4 py-2 text-lg duration-500 ease-in-out rounded-lg laptop:text-xl hover:bg-orange-800"
+          className="px-4 py-2 text-base duration-500 ease-in-out rounded-lg tablet:text-lg laptop:text-xl hover:bg-orange-800"
         >
           Home
         </Link>
