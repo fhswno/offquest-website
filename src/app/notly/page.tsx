@@ -37,18 +37,18 @@ const NotlyNavbar = () => {
         width={300}
         height={300}
         priority
-        className="w-44 hover:animate-pulse"
+        className="w-36 laptop:w-44 hover:animate-pulse"
       />
       <div className="flex flex-row items-center gap-12">
         <Link
           href="/notly/privacy"
-          className="px-4 py-2 text-xl duration-500 ease-in-out rounded-lg hover:bg-orange-800"
+          className="px-4 py-2 text-lg duration-500 ease-in-out rounded-lg laptop:text-xl hover:bg-orange-800"
         >
           Privacy
         </Link>
         <Link
           href="/"
-          className="px-4 py-2 text-xl duration-500 ease-in-out rounded-lg hover:bg-orange-800"
+          className="px-4 py-2 text-lg duration-500 ease-in-out rounded-lg laptop:text-xl hover:bg-orange-800"
         >
           Home
         </Link>
@@ -70,7 +70,7 @@ const NotlyContent = () => {
         blurDataURL="/notly-icon.png"
         placeholder="blur"
       />
-      <div className="flex flex-col items-center justify-center w-1/2 gap-5 laptop:w-2/5">
+      <div className="flex flex-col items-center justify-center w-2/3 gap-5 laptop:w-1/2 desktop:w-2/5">
         <h1 className="text-4xl font-medium leading-tight text-center desktop:text-5xl">
           Organise your life with Notly
         </h1>
