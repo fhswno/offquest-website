@@ -164,6 +164,47 @@ const Page = () => {
           </Link>{' '}
           for infringement of your data protection rights.
         </p>
+        <h2 className="text-2xl font-semibold tablet:text-3xl">
+          Use of Collected Information
+        </h2>
+        <p>
+          The collected information is used to allow you to use the various
+          services offered on the Website. By creating your account, you
+          voluntarily and expressly agree to the General Terms and Conditions of
+          Use of the Website and this Privacy Policy, which authorize the
+          Company to process your data.
+        </p>
+        <p>
+          Because the protection of your personal data is essential, the Company
+          undertakes not to sell, rent or provide your personal information in
+          any way, except as described in this Privacy Policy and the General
+          Terms and Conditions of Use of the Website. However, in various
+          situations, the Company may disclose or share your personal
+          information with third parties, including:
+        </p>
+        <ul className="flex flex-col gap-4 pl-6">
+          <li className="list-disc">
+            <i>with your explicit or implicit consent;</i>
+          </li>
+          <li className="list-disc">
+            <i>
+              to comply with applicable law, regulations, court orders,
+              judgments, or any other mandatory disclosure;
+            </i>
+          </li>
+          <li className="list-disc">
+            <i>
+              {' '}
+              to protect the rights, property, or safety of the Website, its
+              members, or the public; or
+            </i>
+          </li>
+          <li className="list-disc">
+            as part of the provision of the various services and features
+            offered by the Website, but only when necessary for the performance
+            of its operations and the provision of these services and features.
+          </li>
+        </ul>
       </section>
     </main>
   );
