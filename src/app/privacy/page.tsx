@@ -180,7 +180,7 @@ const Page = () => {
           any way, except as described in this Privacy Policy and the General
           Terms and Conditions of Use of the Website. However, in various
           situations, the Company may disclose or share your personal
-          information with third parties, including:
+          information with third parties, <u>including</u>:
         </p>
         <ul className="flex flex-col gap-4 pl-6">
           <li className="list-disc">
@@ -194,15 +194,17 @@ const Page = () => {
           </li>
           <li className="list-disc">
             <i>
-              {' '}
               to protect the rights, property, or safety of the Website, its
               members, or the public; or
             </i>
           </li>
           <li className="list-disc">
-            as part of the provision of the various services and features
-            offered by the Website, but only when necessary for the performance
-            of its operations and the provision of these services and features.
+            <i>
+              as part of the provision of the various services and features
+              offered by the Website, but only when necessary for the
+              performance of its operations and the provision of these services
+              and features.
+            </i>
           </li>
         </ul>
       </section>
