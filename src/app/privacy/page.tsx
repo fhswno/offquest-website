@@ -4,12 +4,13 @@ import Link from 'next/link';
 
 // NAVIGATION
 import Navbar from '@/components/Navigation/Navbar';
+import Footer from '@/components/Navigation/Footer';
 
 const Page = () => {
   return (
     <main className="flex flex-col items-center justify-center w-full h-full text-white bg-gray-900">
       <Navbar />
-      <div className="flex flex-row items-center gap-4 h-[600px]">
+      <div className="flex flex-row items-center gap-4 h-[500px] tablet:h-[600px] pt-20 tablet:pt-0">
         <Image
           src="/logo.png"
           alt="OffQuest Logo"
@@ -22,7 +23,7 @@ const Page = () => {
         />
         <h1 className="text-6xl">Privacy</h1>
       </div>
-      <section className="flex flex-col w-full gap-8 pb-40 text-base tablet:text-lg tablet:w-11/12">
+      <section className="flex flex-col w-11/12 gap-8 pb-40 text-base tablet:text-lg">
         <p>
           <strong>Effective Date</strong>: 23 April 2024
         </p>
@@ -268,6 +269,7 @@ const Page = () => {
           Paris (France).
         </p>
       </section>
+      <Footer />
     </main>
   );
 };
