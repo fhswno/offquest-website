@@ -9,7 +9,7 @@ type Props = {
 
 const NotlyNavbar = ({ isPrivacy = false }: Props) => {
   return (
-    <nav className="flex flex-row items-center justify-between w-full p-4 text-white">
+    <nav className="flex flex-row items-center justify-between w-full text-white tablet:p-4">
       <Image
         src="/notly-wordmark.png"
         alt="Notly Logo"
