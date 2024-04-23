@@ -100,9 +100,10 @@ const Page = () => {
           Use of the Website
         </h3>
         <p>
-          During your use of the Website, the Company's servers automatically
-          record the information created and exchanged using our Services. For
-          example, the Company is aware of all your session information{' '}
+          During your use of the Website, the Company&apos;s servers
+          automatically record the information created and exchanged using our
+          Services. For example, the Company is aware of all your session
+          information{' '}
           <i>(which page you visited on the Website, what data was entered)</i>.
         </p>
         <h3 className="text-xl font-semibold tablet:text-2xl">
