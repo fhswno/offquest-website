@@ -264,7 +264,7 @@ const Page = () => {
           >
             privacy@offquest.io
           </Link>{' '}
-          - or by post at the following address: 10 rue de Penthièvre 75008
+          - or by post at the following address: 10 rue de Penthièvre, 75008
           Paris (France).
         </p>
       </section>
