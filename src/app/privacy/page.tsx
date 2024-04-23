@@ -208,7 +208,7 @@ const Page = () => {
           </li>
         </ul>
         <h2 className="text-2xl font-semibold tablet:text-3xl">
-          Your obligations
+          Your Obligations
         </h2>
         <p>
           As a visitor of the Website, you are required to comply with, in
