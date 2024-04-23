@@ -20,7 +20,6 @@ const NotlyNavbar = ({ isPrivacy = false }: Props) => {
       />
       <div className="flex flex-row items-center gap-2 tablet:gap-12">
         <Link
-          // href="/notly/privacy"
           href={isPrivacy ? '/notly' : '/notly/privacy'}
           className="px-4 py-2 text-base duration-500 ease-in-out rounded-lg tablet:text-lg laptop:text-xl hover:bg-orange-800"
         >
