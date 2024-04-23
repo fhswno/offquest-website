@@ -237,11 +237,13 @@ const Page = () => {
           case of unauthorised use of your account or any breach of
           confidentiality and security of your means of identification, you must
           inform the Company immediately.
-        </p>{' '}
-        The Company takes all reasonable measures to protect information against
-        loss, misuse and unauthorised access, disclosure, alteration and
-        destruction. Various physical and electronic procedures have been put in
-        place to ensure the protection of your personal data.
+        </p>
+        <p>
+          The Company takes all reasonable measures to protect information
+          against loss, misuse and unauthorised access, disclosure, alteration
+          and destruction. Various physical and electronic procedures have been
+          put in place to ensure the protection of your personal data.
+        </p>
       </section>
     </main>
   );
