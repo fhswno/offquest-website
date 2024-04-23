@@ -207,6 +207,22 @@ const Page = () => {
             </i>
           </li>
         </ul>
+        <h2 className="text-2xl font-semibold tablet:text-3xl">
+          Your obligations
+        </h2>
+        <p>
+          As a visitor of the Website, you are required to comply with, in
+          addition to legal and regulatory obligations, the obligations arising
+          from this Privacy Policy and the General Terms and Conditions of Use
+          of the Website.
+        </p>
+        <p>
+          The Company also calls for your responsibility as Visitors are solely
+          responsible for the information and content, including information
+          about race, ethnic origin, sexual orientation, political opinions,
+          religious or philosophical beliefs, membership in a trade union, or
+          any information relating to health, they communicate.
+        </p>
       </section>
     </main>
   );
