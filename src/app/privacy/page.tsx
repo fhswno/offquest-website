@@ -223,10 +223,7 @@ const Page = () => {
           religious or philosophical beliefs, membership in a trade union, or
           any information relating to health, they communicate.
         </p>
-        <h2
-          className="text-2xl font-semibold tablet:text-3xl"
-          id="Protection-of-minors"
-        >
+        <h2 className="text-2xl font-semibold tablet:text-3xl">
           Protection of Minors
         </h2>
         <p>
