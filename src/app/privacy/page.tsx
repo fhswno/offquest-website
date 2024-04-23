@@ -7,9 +7,9 @@ import Navbar from '@/components/Navigation/Navbar';
 
 const Page = () => {
   return (
-    <main className="flex flex-col items-center justify-center w-full h-screen text-white bg-gray-900">
+    <main className="flex flex-col items-center justify-center w-full h-full text-white bg-gray-900">
       <Navbar />
-      <div className="flex flex-row items-center gap-4 h-96">
+      <div className="flex flex-row items-center gap-4 h-[600px]">
         <Image
           src="/logo.png"
           alt="OffQuest Logo"
