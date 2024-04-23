@@ -41,7 +41,7 @@ const Page = () => {
           >
             952 107 431
           </Link>{' '}
-          <i>(the "Company")</i>.
+          <i>(the &quot;Company&quot;)</i>.
         </p>
         <p>
           Website visitors <i>(the "Visitor(s)")</i> have access to visionary
