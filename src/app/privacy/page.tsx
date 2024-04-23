@@ -28,7 +28,8 @@ const Page = () => {
           <strong>Effective Date</strong>: 23 April 2024
         </p>
         <p>
-          offquest.io <i>(hereinafter referred to as the "Website") </i>is a
+          offquest.io{' '}
+          <i>(hereinafter referred to as the &quot;Website&quot;) </i>is a
           website operated by OffQuest, a Simplified Joint-Stock Company with a
           share capital of 500 euros and registered office at 10 rue de
           Penthièvre, 75008 Paris (France), registered with the Paris Trade and
