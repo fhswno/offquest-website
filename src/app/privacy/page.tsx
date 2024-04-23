@@ -223,6 +223,16 @@ const Page = () => {
           religious or philosophical beliefs, membership in a trade union, or
           any information relating to health, they communicate.
         </p>
+        <h2
+          className="text-2xl font-semibold tablet:text-3xl"
+          id="Protection-of-minors"
+        >
+          Protection of minors
+        </h2>
+        <p>
+          To protect minors, the Visitor must be at least 18 years old and have
+          full legal capacity.
+        </p>
       </section>
     </main>
   );
