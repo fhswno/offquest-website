@@ -244,6 +244,13 @@ const Page = () => {
           and destruction. Various physical and electronic procedures have been
           put in place to ensure the protection of your personal data.
         </p>
+        <h2 className="text-2xl font-semibold tablet:text-3xl">
+          Modification of the Privacy Policy{' '}
+        </h2>
+        The Company reserves the right to modify, supplement or replace the
+        provisions of this Privacy Policy. In the event of a significant
+        modification, the Company undertakes to display a notification of the
+        modification of the Privacy Policy on the Website.
       </section>
     </main>
   );
