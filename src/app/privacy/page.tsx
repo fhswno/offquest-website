@@ -245,12 +245,28 @@ const Page = () => {
           put in place to ensure the protection of your personal data.
         </p>
         <h2 className="text-2xl font-semibold tablet:text-3xl">
-          Modification of the Privacy Policy{' '}
+          Modification of the Privacy Policy
         </h2>
-        The Company reserves the right to modify, supplement or replace the
-        provisions of this Privacy Policy. In the event of a significant
-        modification, the Company undertakes to display a notification of the
-        modification of the Privacy Policy on the Website.
+        <p>
+          The Company reserves the right to modify, supplement or replace the
+          provisions of this Privacy Policy. In the event of a significant
+          modification, the Company undertakes to display a notification of the
+          modification of the Privacy Policy on the Website.
+        </p>
+        <h2 className="text-2xl font-semibold tablet:text-3xl">Contact</h2>
+
+        <p>
+          For any questions, observations, suggestions, or complaints, please
+          contact <strong>OffQuest</strong> by email -{' '}
+          <Link
+            href="mailto:privacy@offquest.io?subject=About OffQuest's Privacy Policy&body=Hello,%0D%0A%0D%0AI have a question about OffQuest's Privacy Policy..."
+            className="underline"
+          >
+            privacy@offquest.io
+          </Link>{' '}
+          - or by post at the following address: 10 rue de Penthièvre 75008
+          Paris (France).
+        </p>
       </section>
     </main>
   );
