@@ -44,8 +44,8 @@ const Page = () => {
           <i>(the &quot;Company&quot;)</i>.
         </p>
         <p>
-          Website visitors <i>(the "Visitor(s)")</i> have access to visionary
-          statements and elementary information about the Company.
+          Website visitors <i>(the &quot;Visitor(s)&quot;)</i> have access to
+          visionary statements and elementary information about the Company.
         </p>
         <p>
           Visiting the website involves the collection of basic, non-sensitive
