@@ -230,6 +230,18 @@ const Page = () => {
           To protect minors, the Visitor must be at least 18 years old and have
           full legal capacity.
         </p>
+        <h2 className="text-2xl font-semibold tablet:text-3xl">Security</h2>
+        <p>
+          To ensure the protection of your personal information, access to your
+          account is protected by a password that you must keep confidential. In
+          case of unauthorised use of your account or any breach of
+          confidentiality and security of your means of identification, you must
+          inform the Company immediately.
+        </p>{' '}
+        The Company takes all reasonable measures to protect information against
+        loss, misuse and unauthorised access, disclosure, alteration and
+        destruction. Various physical and electronic procedures have been put in
+        place to ensure the protection of your personal data.
       </section>
     </main>
   );
