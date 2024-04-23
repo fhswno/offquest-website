@@ -10,7 +10,7 @@ const Page = () => {
   return (
     <main className="flex flex-col items-center justify-center w-full h-full text-white bg-gray-900">
       <Navbar />
-      <div className="flex flex-row items-center gap-4 h-[500px] tablet:h-[600px] pt-20 tablet:pt-0">
+      <div className="flex flex-row items-center gap-4 h-[500px] tablet:h-[600px] pt-20">
         <Image
           src="/logo.png"
           alt="OffQuest Logo"
