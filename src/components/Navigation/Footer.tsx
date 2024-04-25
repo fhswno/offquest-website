@@ -17,9 +17,7 @@ const Footer = () => {
           priority
           className="hover:animate-pulse"
         />
-        <h1 className="ml-2 text-5xl font-semibold text-black dark:text-white">
-          OffQuest
-        </h1>
+        <h1 className="ml-2 text-5xl font-semibold text-white">OffQuest</h1>
       </Link>
       <div className="flex flex-col items-center justify-center w-4/5 gap-6 tablet:w-1/2">
         <p className="text-white">Made with ❤️ in London 🇬🇧</p>
