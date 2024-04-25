@@ -102,6 +102,7 @@ const ContactForm = () => {
           placeholder="Your Name"
           className="w-3/4 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg tablet:w-1/2 focus:outline-none"
           onChange={handleChange}
+          autoComplete="off"
         />
         <input
           type="email"
@@ -109,6 +110,7 @@ const ContactForm = () => {
           placeholder="Your Email"
           className="w-3/4 p-2 text-white placeholder-gray-200 bg-gray-500 rounded-lg tablet:w-1/2 focus:outline-none"
           onChange={handleChange}
+          autoComplete="off"
         />
         <textarea
           placeholder="Your Message..."

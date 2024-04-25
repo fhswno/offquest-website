@@ -17,9 +17,7 @@ export default function NotFound() {
           priority
           className="hover:animate-pulse"
         />
-        <h1 className="ml-2 text-4xl font-semibold text-black dark:text-white">
-          OffQuest
-        </h1>
+        <h1 className="ml-2 text-4xl font-semibold text-white">OffQuest</h1>
       </Link>
       <div className="flex flex-col items-center justify-center gap-2 text-center">
         <h1 className="font-semibold text-8xl">404</h1>
