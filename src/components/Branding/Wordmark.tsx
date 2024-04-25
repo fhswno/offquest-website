@@ -16,9 +16,7 @@ const Wordmark = () => {
         priority
         className="hover:animate-pulse"
       />
-      <h1 className="ml-2 text-xl font-semibold text-black dark:text-white">
-        OffQuest
-      </h1>
+      <h1 className="ml-2 text-xl font-semibold text-white">OffQuest</h1>
     </Link>
   );
 };
